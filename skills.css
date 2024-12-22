@@ -235,10 +235,101 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    /* General adjustments */
+
+@media (max-width: 480px) {
     body {
-        font-size: 14px; /* Reduce the font size for better readability */
+        font-size: 12px; 
+    }
+
+    .wrapper {
+        margin-top: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 60px; 
+        margin: 5px auto;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+
+    .transform-your-team {
+        gap: 5px;
+    }
+
+    .transform-your-team img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .transform-your-team h1, .transform-your-team h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .transform-your-team p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .recentWork {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .tip {
+        width: 200px;
+        margin: 5px auto;
+    }
+
+    .footer-section__container {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section__container div {
+        margin: 5px 0;
+    }
+
+    .insta-icon,
+    .facebook-icon {
+        font-size: 16px;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .transform-your-team h1 {
+        font-size: 16px;
+    }
+
+    .transform-your-team h2 {
+        font-size: 14px;
+    }
+
+    .transform-your-team p {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
     }
 
     .wrapper {
@@ -251,27 +342,15 @@ body {
     }
 
     .logo img {
-        width: 80px; /* Scale down the logo */
+        width: 80px; 
         margin: 10px auto;
     }
 
     .navigation ul {
-        margin: 10px auto;
-        padding: 0;
-        text-align: center;
+        display: none;
     }
 
-    .navigation ul li {
-        margin: 5px;
-        font-size: 16px;
-    }
 
-    .navigation ul li a {
-        padding: 5px;
-        font-size: 14px;
-    }
-
-    /* Transform-your-team adjustments */
     .transform-your-team {
         flex-direction: column;
         gap: 10px;
@@ -292,20 +371,17 @@ body {
         text-align: center;
     }
 
-    /* Recent Work Section */
     .recentWork {
         flex-direction: column;
         margin-left: 0;
         gap: 20px;
     }
 
-    /* Tip Section */
     .tip {
         width: 250px;
         margin: 10px auto;
     }
 
-    /* Footer adjustments */
     .footer-section__container {
         flex-direction: column;
         width: 100%;

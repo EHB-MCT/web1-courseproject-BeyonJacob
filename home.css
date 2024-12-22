@@ -428,7 +428,6 @@ html, body {
 		margin-bottom: 50px;
     }
 
-    /* Recent Work Section */
     .recentWork {
         flex-direction: column;
         margin-left: 0;
@@ -436,16 +435,16 @@ html, body {
     }
 
 	.transform-your-team {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
 		margin-top: -100px;
 		margin-left: 250px;
     }
 
 	.transform-your-team img {
-		width: 100%; /* Adjust to make the images responsive */
-		height: auto; /* Maintain aspect ratio */
-		display: block; /* Ensure the image behaves like a block element */
-		margin-bottom: 10px; /* Optional: adds space below each image */
+		width: 100%; 
+		height: auto; 
+		display: block; 
+		margin-bottom: 10px; 
 		padding-right: 15px;
 		margin-top: -50px;
 		margin-bottom: 30px;
@@ -485,14 +484,24 @@ html, body {
     }
 
 
+
+
+
+
+
+
+
+
+
+
 	@media (max-width: 480px) {
 
 		.header {
-			margin-bottom: -200px;
+			margin-bottom: -150px;
 	
 		}
 		.logo img {
-			width: 150px;
+			width: 2px;
 			margin: 20px 0;
 
 		}
@@ -507,7 +516,8 @@ html, body {
 			font-size: 50px;
 			padding-bottom: 20px;
 			margin-top: 30px;
-			margin-left: 10px;
+			text-align: center;
+
 		}
 	
 		.hero-text h2 {
@@ -521,7 +531,7 @@ html, body {
 			font-size: 10px;
 			padding: 10px 10px;
 			align-items: center;
-			margin-left: 30px;
+			margin-left: 80px;
 			margin-bottom: 30px;
 		}
 	
@@ -562,17 +572,15 @@ html, body {
 
 
 		.transform-your-team {
-			flex-direction: column; /* Stack items vertically */
-			margin-top: -100px;
+			margin-left: -0px;
+
 		}
 	
 		.transform-your-team img {
-			width: 100%; /* Adjust to make the images responsive */
-			height: auto; /* Maintain aspect ratio */
-			display: block; /* Ensure the image behaves like a block element */
-			margin-bottom: 100px; /* Optional: adds space below each image */
-			padding-right: 15px;
-			margin-top: -50px;
+			width: 100%; 
+			height: auto; 
+			display: block; 
+			margin-bottom: 100px; 
 		}
 		
 	
