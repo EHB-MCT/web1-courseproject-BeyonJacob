@@ -1,84 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    font-family: "Bangers", sans-serif;
-    background-color: #0c0105;
+	height: 100vh;
+	font-family: "Bangers", sans-serif;
+	background-color: #0c0105;
 }
 
 .wrapper {
-    width: 100%;
-    height: auto;
-    background-color: #4B0082;
+	width: 100%;
+	height: auto;
+	background-color: #4B0082;
     margin-top: 60px;
 }
 
 .header {
-    width: 100%;
-    height: 20%;
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	width: 100%;
+	height: 20%;
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color: #ff2a68; */
 }
 
 .logo img {
-    width: 120px;
-    margin: 100px;
-    margin-top: 100px;
+	width: 120px;
+	margin: 100px;
+	margin-top: 100px;
 }
 
 .navigation {
-    text-decoration: none;
-    font-family: "Bangers", sans-serif;
+	text-decoration: none;
+	font-family: "Bangers", sans-serif;
 }
 
 .navigation ul {
-    margin: 100px;
-    padding: 0;
+	margin: 100px;
+	padding: 0;
 }
 
 .navigation ul li {
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 18px;
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 18px;
 }
 
 .navigation ul li a {
-    text-decoration: none;
-    color: #d7176a;
-    font-family: "Bangers", sans-serif;
-    transition: color 0.3s ease, background-color 0.3s ease;
+	text-decoration: none; /* Removes underline */
+	color: #d7176a; /* Default text color */
+	font-family: "Bangers", sans-serif;
+	transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 }
 
 .navigation ul li a:hover {
-    color: #fff;
-    padding: 5px 10px;
+	color: #fff; /* Text color on hover */
+	padding: 5px 10px; /* Optional: Adds padding for the hover effect */
 }
+
+
+
+
+
+
+
+
 
 .reviews {
     margin: 0 auto;
     max-width: 12000px;
     padding: 20px;
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
+    opacity: 0;  /* Start with invisible */
+    animation: fadeIn 0.5s forwards; /* Faster fade-in effect */
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px); /* Starts slightly lower */
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0); /* Ends at normal position */
     }
 }
 
@@ -89,17 +98,17 @@ body {
     color: #d7176a;
     font-size: 28px;
     letter-spacing: 5px;
-    animation: slideInTop 0.5s forwards;
+    animation: slideInTop 0.5s forwards; /* Faster slide-in effect */
 }
 
 @keyframes slideInTop {
     0% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-20px); /* Starts above */
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0); /* Ends at normal position */
     }
 }
 
@@ -109,33 +118,33 @@ body {
     margin-bottom: 150px;
     padding-right: 100px;
     margin-top: 150px;
-    animation: fadeInUp 0.5s forwards;
+    animation: fadeInUp 0.5s forwards; /* Faster fade-in from the bottom */
 }
 
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px); /* Starts slightly lower */
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0); /* Ends at normal position */
     }
 }
 
 .hello div {
     flex: 1;
     text-align: center;
-    animation: scaleIn 0.5s ease forwards;
+    animation: scaleIn 0.5s ease forwards; /* Faster scale-in effect */
 }
 
 @keyframes scaleIn {
     0% {
-        transform: scale(0.8);
+        transform: scale(0.8); /* Start scaled down */
         opacity: 0;
     }
     100% {
-        transform: scale(1);
+        transform: scale(1); /* Ends at normal size */
         opacity: 1;
     }
 }
@@ -145,11 +154,11 @@ body {
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out; /* Faster image hover effect */
 }
 
 .hello div img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .hello h2, .hello p {
@@ -157,7 +166,7 @@ body {
     margin-bottom: 20px;
     font-family: "Bangers", sans-serif;
     text-align: left;
-    animation: fadeInText 0.4s ease-out forwards;
+    animation: fadeInText 0.4s ease-out forwards; /* Faster text fade-in */
 }
 
 @keyframes fadeInText {
@@ -179,53 +188,73 @@ body {
     letter-spacing: 2px;
 }
 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer-section {
-    width: 100%;
-    margin-top: 10px;
-    background-color: #4B0082;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
+	width: 100%;
+	margin-top: 10px;
+	background-color: #4B0082;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden; /* Prevent horizontal scrolling for this section */
 }
 
 .footer-section__container {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    color: #d7176a;
-    letter-spacing: 2px;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	color: #d7176a;
+	letter-spacing: 2px;
 }
 
 .footer-section__container div p {
-    transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .footer-section__container div .email:hover {
-    color: #ff4081;
+	/* Change color for email on hover */
+	color: #ff4081;
 }
 
 .footer-section__container div .phone:hover {
-    color: #ff4081;
+	/* Change color for phone number on hover */
+	color: #ff4081;
 }
 
-.insta-icon, .facebook-icon {
-    font-size: 20px;
+
+.insta-icon,
+.facebook-icon {
+	font-size: 20px;
     color: #d7176a;
 }
 
-.insta-icon:hover, .facebook-icon:hover {
-    color: #ff4081;
-    cursor: pointer;
+.insta-icon:hover,
+.facebook-icon:hover {
+    color: #ff4081; /* Change to a different color on hover */
+    cursor: pointer; /* Optional: Change the cursor to indicate it's clickable */
 }
 
 .logo {
-    width: 40px;
-    margin-right: 115px;
+	width: 40px;
+	margin-right: 115px;
 }
 
 .logo:hover {
-    transform: scale(1.1);
-    transition: transform 0.1s ease;
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+    transition: transform 0.1s ease; /* Smooth transition for the scale effect */
 }
