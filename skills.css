@@ -233,3 +233,96 @@ body {
     transform: scale(1.1);
     transition: transform 0.1s ease;
 }
+
+
+@media (max-width: 768px) {
+    /* General adjustments */
+    body {
+        font-size: 14px; /* Reduce the font size for better readability */
+    }
+
+    .wrapper {
+        margin-top: 30px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 80px; /* Scale down the logo */
+        margin: 10px auto;
+    }
+
+    .navigation ul {
+        margin: 10px auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .navigation ul li {
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .navigation ul li a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    /* Transform-your-team adjustments */
+    .transform-your-team {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .transform-your-team img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .transform-your-team h1, .transform-your-team h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .transform-your-team p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Recent Work Section */
+    .recentWork {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    /* Tip Section */
+    .tip {
+        width: 250px;
+        margin: 10px auto;
+    }
+
+    /* Footer adjustments */
+    .footer-section__container {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section__container div {
+        margin: 10px 0;
+    }
+
+    .insta-icon,
+    .facebook-icon {
+        font-size: 18px;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
